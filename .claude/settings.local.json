@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-ChildItem -Path \"d:\\\\ANIMESH\\\\ML projects\" -Recurse -File | Measure-Object\\).Count)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\ANIMESH\\\\ML projects\\\\Chess\" -File | Select-Object Name, @{Name=\"Size_KB\"; Expression={[math]::Round\\($_.Length/1KB, 2\\)}})",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\ANIMESH\\\\ML projects\\\\Netflix\" -File | Select-Object Name, @{Name=\"Size_KB\"; Expression={[math]::Round\\($_.Length/1KB, 2\\)}})"
+    ]
+  }
+}
